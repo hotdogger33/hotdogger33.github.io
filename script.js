@@ -1,9 +1,10 @@
+// Function to toggle the vertical menu
 function toggleMenu() {
-    const menu = document.getElementById("vertical-bar");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
+    const verticalBar = document.getElementById('vertical-bar');
+    if (verticalBar.style.display === 'block') {
+        verticalBar.style.display = 'none'; // Hide the menu
     } else {
-        menu.style.display = "block";
+        verticalBar.style.display = 'block'; // Show the menu
     }
 }
 
@@ -13,10 +14,12 @@ function openModal(imageSrc) {
     const modalImg = document.getElementById('modal-img');
     modal.style.display = 'flex'; // Show the modal as a flex container
     modalImg.src = imageSrc; // Set the modal image to the clicked image
+    document.body.style.overflow = 'hidden'; // Disable scrolling when modal is open
 }
 
 // Function to close the modal
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = 'none'; // Hide the modal
+    document.body.style.overflow = 'auto'; // Re-enable scrolling when modal is closed
 }
