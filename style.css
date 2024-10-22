@@ -77,22 +77,7 @@ body {
     max-width: 80%;
     max-height: 80%;
     border-radius: 8px;
-}
-
-.close {
-    position: absolute;
-    top: 5%; /* Adjusted to move closer to the image */
-    right: 12%; /* Position "X" near the image, not covering it */
-    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent circle */
-    width: 50px; /* Circular button */
-    height: 50px;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    cursor: pointer; /* Allow clicking on the modal content */
 }
 
 /* Image gallery styling */
