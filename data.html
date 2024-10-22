@@ -28,22 +28,28 @@
         <!-- Images Section -->
         <div class="image-gallery">
             <div class="image-item">
-                <img src="WorldEconomicLeaders.png" alt="World Economic Leaders">
+                <img src="WorldEconomicLeaders.png" alt="World Economic Leaders" onclick="openModal('WorldEconomicLeaders.png')">
                 <p>World Economic Leaders</p>
             </div>
             <div class="image-item">
-                <img src="WorldEconomicDebtors.png" alt="World Economic Debtors">
+                <img src="WorldEconomicDebtors.png" alt="World Economic Debtors" onclick="openModal('WorldEconomicDebtors.png')">
                 <p>World Economic Debtors</p>
             </div>
             <div class="image-item">
-                <img src="DebtAsPercentOfGDP.png" alt="Debt as Percent of GDP">
+                <img src="DebtAsPercentOfGDP.png" alt="Debt as Percent of GDP" onclick="openModal('DebtAsPercentOfGDP.png')">
                 <p>Debt as Percent of GDP</p>
             </div>
             <div class="image-item">
-                <img src="GDPGrowth.png" alt="GDP Growth">
+                <img src="GDPGrowth.png" alt="GDP Growth" onclick="openModal('GDPGrowth.png')">
                 <p>GDP Growth</p>
             </div>
         </div>
+    </div>
+
+    <!-- Modal Section -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&#x2715;</span>
+        <img id="modal-img" class="modal-content">
     </div>
 
     <script src="script.js"></script>

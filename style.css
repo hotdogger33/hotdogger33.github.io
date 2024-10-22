@@ -1,21 +1,22 @@
 /* General styling */
 body {
-    font-family: Arial, sans-serif; /* Default body font */
-    background-color: #F0EAD6; /* Eggshell white */
+    font-family: Arial, sans-serif;
+    background-color: #F0EAD6;
     margin: 0;
 }
 
+/* Top bar */
 .top-bar {
-    background-color: #001f3f; /* Dark navy */
+    background-color: #001f3f;
     padding: 20px;
     text-align: center;
 }
 
 .top-bar h1 {
-    font-family: 'Times New Roman', Times, serif; /* Font for the main title */
-    color: #F0EAD6; /* Eggshell white text */
+    font-family: 'Times New Roman', Times, serif;
+    color: #F0EAD6;
     margin: 0;
-    font-size: 36px; /* Change the font size for the main title */
+    font-size: 36px;
 }
 
 .menu-button {
@@ -26,7 +27,7 @@ body {
     color: #001f3f;
     border: none;
     padding: 10px;
-    font-size: 16px; /* Font size for the menu button */
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -36,13 +37,13 @@ body {
 
 /* Vertical navigation bar */
 .vertical-bar {
-    display: none; /* Keep hidden initially */
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
     width: 200px;
     height: 100%;
-    background-color: #001b36; /* Darker blue */
+    background-color: #001b36;
     padding-top: 60px;
     flex-direction: column;
 }
@@ -50,15 +51,14 @@ body {
 .vertical-bar a {
     display: block;
     padding: 15px;
-    color: #F0EAD6; /* Eggshell white text */
+    color: #F0EAD6;
     text-align: center;
     text-decoration: none;
-    font-size: 18px; /* Font size for navigation links */
-    font-family: 'Courier New', Courier, monospace; /* Font for navigation links */
+    font-size: 18px;
 }
 
 .vertical-bar a:hover {
-    background-color: #002c4f; /* Slightly lighter hover effect */
+    background-color: #002c4f;
 }
 
 /* Page content */
@@ -67,9 +67,9 @@ body {
 }
 
 .content h2 {
-    font-family: 'Georgia', serif; /* Font for subheading */
+    font-family: 'Georgia', serif;
     color: #001f3f;
-    font-size: 24px; /* Change the font size for subheading */
+    font-size: 24px;
 }
 
 /* Image gallery styling */
@@ -83,20 +83,51 @@ body {
 
 .image-item {
     text-align: center;
-    flex-basis: 45%; /* Two images per row, each taking 45% width with space between */
+    flex-basis: 40%; /* Images take 40% of container */
     margin-bottom: 20px;
 }
 
 .image-item img {
-    width: 20%; /* Make the images responsive */
+    width: 100%; /* Responsive width (40% of flex container) */
     height: auto;
-    border-radius: 8px; /* Rounded corners for the images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the images */
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-item p {
-    font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: #333;
     margin-top: 10px;
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent circle */
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
 }
