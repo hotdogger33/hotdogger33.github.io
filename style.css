@@ -1,0 +1,102 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif; /* Default body font */
+    background-color: #F0EAD6; /* Eggshell white */
+    margin: 0;
+}
+
+.top-bar {
+    background-color: #001f3f; /* Dark navy */
+    padding: 20px;
+    text-align: center;
+}
+
+.top-bar h1 {
+    font-family: 'Times New Roman', Times, serif; /* Font for the main title */
+    color: #F0EAD6; /* Eggshell white text */
+    margin: 0;
+    font-size: 36px; /* Change the font size for the main title */
+}
+
+.menu-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #F0EAD6;
+    color: #001f3f;
+    border: none;
+    padding: 10px;
+    font-size: 16px; /* Font size for the menu button */
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #e5d7b9;
+}
+
+/* Vertical navigation bar */
+.vertical-bar {
+    display: none; /* Keep hidden initially */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #001b36; /* Darker blue */
+    padding-top: 60px;
+    flex-direction: column;
+}
+
+.vertical-bar a {
+    display: block;
+    padding: 15px;
+    color: #F0EAD6; /* Eggshell white text */
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; /* Font size for navigation links */
+    font-family: 'Courier New', Courier, monospace; /* Font for navigation links */
+}
+
+.vertical-bar a:hover {
+    background-color: #002c4f; /* Slightly lighter hover effect */
+}
+
+/* Page content */
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-family: 'Georgia', serif; /* Font for subheading */
+    color: #001f3f;
+    font-size: 24px; /* Change the font size for subheading */
+}
+
+/* Image gallery styling */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-item {
+    text-align: center;
+    flex-basis: 45%; /* Two images per row, each taking 45% width with space between */
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 20%; /* Make the images responsive */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the images */
+}
+
+.image-item p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
