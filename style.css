@@ -180,3 +180,13 @@ h2 {
     font-size: 20px;
     margin-top: 20px;
 }
+
+/* Additional Styles for War Parameters */
+#losingWar, #winningWar {
+    display: none; /* Initially hidden */
+    margin-left: 20px; /* Indent for subsection look */
+}
+
+#losingWar label, #winningWar label {
+    font-size: 14px; /* Smaller font for subsections */
+}

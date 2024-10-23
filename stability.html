@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Stability Calculator</title>
+    <title>Stability Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="top-bar">
-        <h1>Technical World Observation Group</h1>
+        <h1>Stability Calculator</h1>
         <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
     </div>
-
     <div id="vertical-bar" class="vertical-bar">
+        
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="data.html">Data</a>
         <a href="stability.html">Stability Calculator</a>
+        <a href="data.html">Data Gallery</a>
+        <a href="contact.html">Contact Us</a>
     </div>
-
+    </div>
     <div class="content">
-        <h2>Country Stability Calculator</h2>
-
-        <div id="parameter-container">
-            <!-- Custom Value Components (CVCs) will be added here -->
-        </div>
-
-        <button id="calculateButton">Calculate Stability Score</button>
-
-        <h2>Stability Score: <span id="stabilityScore">4</span></h2>
+        <h2>Input Parameters</h2>
+        <div id="parameter-container"></div>
+        
+        <button id="calculateButton">Calculate Stability</button>
+        <h3>Stability Score: <span id="stabilityScore">0.00</span></h3>
     </div>
-
-    <script src="script.js"></script>
+    <script src="stability.js"></script>
+    <script src="menu.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>

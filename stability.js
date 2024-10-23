@@ -1,33 +1,3 @@
-// Toggle vertical menu visibility
-function toggleMenu() {
-    const verticalBar = document.getElementById("vertical-bar");
-    verticalBar.style.display = verticalBar.style.display === "none" || verticalBar.style.display === "" ? "block" : "none";
-}
-
-// Show modal with larger image
-function showModal(src) {
-    const modal = document.getElementById("modal");
-    const modalImage = document.getElementById("modalImage");
-    modal.style.display = "flex"; // Display modal
-    modalImage.src = src; // Set modal image source
-    document.body.style.overflow = "hidden"; // Disable scroll
-
-    // Close modal when clicking outside the image
-    modal.onclick = closeModal;
-}
-
-// Close modal
-function closeModal() {
-    const modal = document.getElementById("modal");
-    modal.style.display = "none"; // Hide modal
-    document.body.style.overflow = "auto"; // Enable scroll
-}
-
-// Add event listeners to images for modal display
-document.querySelectorAll('.data-image').forEach(image => {
-    image.addEventListener('click', () => showModal(image.src));
-});
-
 // Define the initial parameters for the stability calculator
 const parameters = [
     { id: "IS IN WAR", weight: 3, positive: false },
@@ -70,8 +40,6 @@ const parameters = [
     { id: "UPCOMING ELECTION", weight: 1.5, positive: false },
     { id: "RECENT RIGGED ELECTION", weight: 2, positive: false },
     { id: "IMMIGRATION LEVEL", weight: 1.8, positive: true }
-
-
 ];
 
 // Function to generate CVCs (input fields for parameters)
@@ -90,6 +58,17 @@ function generateCVCs() {
         input.step = "0.1";
         input.value = "0";
         input.dataset.id = param.id; // Attach the parameter ID to the input
+
+        // Add validation for input values
+        input.addEventListener("input", () => {
+            let min = 0;
+            let max = 1;
+            if (param.id === "IMMIGRATION LEVEL") {
+                min = -1;
+            }
+            if (input.value < min) input.value = min;
+            if (input.value > max) input.value = max;
+        });
 
         div.appendChild(label);
         div.appendChild(input);

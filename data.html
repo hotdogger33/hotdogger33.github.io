@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Page</title>
+    <title>Technical World Observation Group</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="top-bar">
-        <h1>Technical World Observation Group Xi was here</h1>
+        <h1>Data Gallery</h1>
         <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
     </div>
-
-    <div class="vertical-bar" id="vertical-bar">
+    <div id="vertical-bar" class="vertical-bar">
+        
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact Us</a>
         <a href="stability.html">Stability Calculator</a>
+        <a href="data.html">Data Gallery</a>
+        <a href="contact.html">Contact Us</a>
     </div>
-
+        
+    </div>
     <div class="content">
-        <h2>Data Page</h2>
+        <h2>Geopolitcal Data</h2>
         <div class="image-gallery">
             <div class="image-item">
                 <img src="WorldEconomicLeaders.png" alt="World Economic Leaders" class="data-image">
@@ -41,11 +42,11 @@
         </div>
     </div>
 
-    <!-- Modal for displaying larger images -->
     <div id="modal" class="modal">
-        <img id="modalImage" class="modal-content" src="" alt="Large View" />
+        <img id="modalImage" class="modal-content" alt="Expanded View">
     </div>
 
-    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>
