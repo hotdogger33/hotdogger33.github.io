@@ -31,7 +31,8 @@ document.querySelectorAll('.data-image').forEach(image => {
 // Define the initial parameters for the stability calculator
 const parameters = [
     { id: "IS IN WAR", weight: 3, positive: false },
-    { id: "IS LOSING WAR", weight: 2.5, positive: false },
+    { id: "IS LOSING WAR", weight: 2.5, positive: true },
+    { id: "IS WINNING WAR", weight: 0, positive: true },
     { id: "HIGH CASUALTIES", weight: 2.5, positive: false },
     { id: "HAS RECESSION", weight: 2.25, positive: false },
     { id: "HAS HIGH INFLATION PAST 4 YEARS", weight: 2.25, positive: false },
@@ -60,7 +61,6 @@ const parameters = [
     { id: "RELIGIOUS INTERNAL ISSUES", weight: 0.85, positive: false },
     { id: "COMPLACENT CULTURE", weight: 3.5, positive: false },
     { id: "UNPOPULAR FOREIGN ACTIONS", weight: 1.75, positive: false },
-    { id: "IS WINNING WAR", weight: 0, positive: true },
     { id: "INTERNAL POLICE CAPABILITIES", weight: 2.5, positive: true },
     { id: "HAS CENSORSHIP SUCCESS", weight: 1.8, positive: false },
     { id: "HAS CENSORSHIP FAILURE", weight: 1.5, positive: false },
