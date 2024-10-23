@@ -31,7 +31,7 @@ document.querySelectorAll('.data-image').forEach(image => {
 // Define the initial parameters for the stability calculator
 const parameters = [
     { id: "IS IN WAR", weight: 3, positive: false },
-    { id: "IS LOOSING WAR", weight: 2.5, positive: false },
+    { id: "IS LOSING WAR", weight: 2.5, positive: false },
     { id: "HIGH CASUALTIES", weight: 2.5, positive: false },
     { id: "HAS RECESSION", weight: 2.25, positive: false },
     { id: "HAS HIGH INFLATION PAST 4 YEARS", weight: 2.25, positive: false },
@@ -49,7 +49,7 @@ const parameters = [
     { id: "CORRUPTION", weight: 1, positive: false },
     { id: "INTERNAL LEGISLATIVE SCANDAL", weight: 0, positive: false },
     { id: "INTERNAL EXECUTIVE SCANDAL", weight: 0, positive: false },
-    { id: "POSSITIVLY RECEIVED REFORMS", weight: 1, positive: true },
+    { id: "POSITIVELY RECEIVED REFORMS", weight: 1, positive: true },
     { id: "NEGATIVELY RECEIVED REFORMS", weight: 1, positive: false },
     { id: "VACANT GOVERNMENT", weight: 5, positive: false },
     { id: "IS OCCUPIED", weight: 1, positive: false },
@@ -69,7 +69,9 @@ const parameters = [
     { id: "DEMOCRATIC LEVEL", weight: 4, positive: true },
     { id: "UPCOMING ELECTION", weight: 1.5, positive: false },
     { id: "RECENT RIGGED ELECTION", weight: 2, positive: false },
-    { id: "IMAGRATION LEVEL", weight: 1.8, positive: true }
+    { id: "IMMIGRATION LEVEL", weight: 1.8, positive: true }
+
+
 ];
 
 // Function to generate CVCs (input fields for parameters)
