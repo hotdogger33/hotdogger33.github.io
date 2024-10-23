@@ -3,53 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data - TWOG</title>
+    <title>Data Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Top bar with title and menu button -->
     <div class="top-bar">
         <h1>Technical World Observation Group</h1>
         <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
     </div>
 
-    <!-- Vertical navigation bar (initially hidden) -->
-    <div id="vertical-bar" class="vertical-bar">
+    <div class="vertical-bar" id="vertical-bar">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact Us</a>
-        <a href="data.html">Data</a>
+        <a href="stability.html">Stability Calculator</a>
     </div>
 
-    <!-- Page content with additional heading -->
     <div class="content">
-        <h2>Global Economic Data</h2>
-        
-        <!-- Images Section -->
+        <h2>Data Page</h2>
         <div class="image-gallery">
             <div class="image-item">
-                <img src="WorldEconomicLeaders.png" alt="World Economic Leaders" onclick="openModal('WorldEconomicLeaders.png')">
+                <img src="WorldEconomicLeaders.png" alt="World Economic Leaders" class="data-image">
                 <p>World Economic Leaders</p>
             </div>
             <div class="image-item">
-                <img src="WorldEconomicDebtors.png" alt="World Economic Debtors" onclick="openModal('WorldEconomicDebtors.png')">
+                <img src="WorldEconomicDebtors.png" alt="World Economic Debtors" class="data-image">
                 <p>World Economic Debtors</p>
             </div>
             <div class="image-item">
-                <img src="DebtAsPercentOfGDP.png" alt="Debt as Percent of GDP" onclick="openModal('DebtAsPercentOfGDP.png')">
-                <p>Debt as Percent of GDP</p>
+                <img src="DebtAsPercentOfGDP.png" alt="Debt As Percent Of GDP" class="data-image">
+                <p>Debt As Percent Of GDP</p>
             </div>
             <div class="image-item">
-                <img src="GDPGrowth.png" alt="GDP Growth" onclick="openModal('GDPGrowth.png')">
+                <img src="GDPGrowth.png" alt="GDP Growth" class="data-image">
                 <p>GDP Growth</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal Section -->
-    <div id="modal" class="modal" onclick="closeModal()">
-        <span class="close" onclick="closeModal()">&#x2715;</span>
-        <img id="modal-img" class="modal-content">
+    <!-- Modal for displaying larger images -->
+    <div id="modal" class="modal">
+        <img id="modalImage" class="modal-content" src="" alt="Large View" />
     </div>
 
     <script src="script.js"></script>

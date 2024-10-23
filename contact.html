@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - TWOG</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Top bar with title and menu button -->
     <div class="top-bar">
         <h1>Technical World Observation Group</h1>
         <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
     </div>
 
-    <!-- Vertical navigation bar (initially hidden) -->
     <div id="vertical-bar" class="vertical-bar">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact Us</a>
         <a href="data.html">Data</a>
+        <a href="stability.html">Stability Calculator</a>
     </div>
 
-    <!-- Page content with additional heading -->
     <div class="content">
         <h2>Contact Us</h2>
         <form>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Message</button>
+            <div class="parameter">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="parameter">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
         </form>
     </div>
 
