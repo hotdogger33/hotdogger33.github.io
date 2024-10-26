@@ -8,25 +8,28 @@
 </head>
 <body>
     <div class="top-bar">
-        <h1>Stability Calculator</h1>
-        <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
-    </div>
-    <div id="vertical-bar" class="vertical-bar">
-        <a href="index.html">Home</a>
-        <a href="stability.html">Stability Calculator</a>
-        <a href="data.html">Data</a>
-        <a href="contact.html">Contact Us</a>
-    </div>
+        <h1>Technical World Observation Group</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="stability.html">Stability Calculator</a>
+            <a href="data.html">Data</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
     </div>
     <div class="content">
         <h2>Input Parameters</h2>
         <div id="parameter-container"></div>
-        
+        <div class="parameter">
+            <label for="IS LOSING WAR">IS LOSING WAR</label>
+            <input type="number" data-id="IS LOSING WAR" value="0" step="0.1" min="0">
+        </div>
+        <div class="parameter">
+            <label for="IS WINNING WAR">IS WINNING WAR</label>
+            <input type="number" data-id="IS WINNING WAR" value="0" step="0.1" min="0">
+        </div>
         <button id="calculateButton">Calculate Stability</button>
         <h3>Stability Score: <span id="stabilityScore">0.00</span></h3>
     </div>
     <script src="stability.js"></script>
-    <script src="menu.js"></script>
-    <script src="modal.js"></script>
 </body>
 </html>

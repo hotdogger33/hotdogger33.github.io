@@ -21,36 +21,20 @@ body {
     font-size: 28px;
 }
 
-.menu-button {
-    background-color: #002147;
-    color: white;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
+/* Navigation links styling in the top bar */
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
-/* Vertical menu bar styling */
-.vertical-bar {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    background-color: #001b36; /* Slightly darker navy */
-    height: 100%;
-    padding-top: 60px;
-}
-
-.vertical-bar a {
-    display: block;
+.nav-links a {
     color: white;
-    text-align: center;
-    padding: 10px;
+    font-size: 14px;
     text-decoration: none;
 }
 
-.vertical-bar a:hover {
-    background-color: #004080;
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 /* Page content styling */
